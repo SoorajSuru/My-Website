@@ -1,0 +1,131 @@
+main {
+  background: rgb(244, 236, 230);
+}
+
+.container1 {
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 > .bullet {
+  width: 30px;
+  height: 30px;
+}
+.container1 > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.info {
+  max-width: 800px;
+  margin: 50px auto 125px auto;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.project-card {
+  margin: 100px auto 75px auto;
+  max-width: 750px;
+  height: 400px;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+  display: flex;
+}
+.proj1 {
+  width: 60%;
+  background: white;
+}
+
+.card-head {
+  margin-top: 50px;
+  display: flex;
+}
+.bar-bullet {
+  width: 12px;
+  height: 75px;
+  background: blue;
+}
+.card-info {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.card-info > h3 {
+  margin: 5px 0 2px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: blue;
+}
+.card-info > p {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.proj1 > p {
+  margin: 75px auto 0 auto;
+  width: 82%;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.proj2 {
+  width: 40%;
+}
+
+.project-card:last-child {
+  margin-bottom: 200px;
+}
+
+@media (max-width: 1024px) {
+  .container1 {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 850px) {
+  .info {
+    width: 90%;
+  }
+  .project-card {
+    width: 95%;
+  }
+}
+
+@media (max-width: 650px) {
+  .project-card {
+    flex-direction: column;
+    height: auto;
+    width: 88%;
+  }
+  .proj1 {
+    width: 100%;
+    height: 410px;
+  }
+  .proj1 > p {
+    margin-bottom: 50px;
+  }
+  .proj2 {
+    width: 100%;
+    height: 410px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container1 > h1 {
+    font-size: 3.5rem;
+  }
+  .container1 {
+    margin-top: 50px;
+  }
+  .container1 > h1 {
+    font-size: 3.5rem;
+  }
+  .proj2 {
+    width: 100%;
+    height: 330px;
+  }
+}

@@ -1,0 +1,186 @@
+main {
+  min-height: 115vh;
+  width: 100vw;
+  background: linear-gradient(to right, rgb(230, 218, 206) 400px, white 1%);
+}
+
+.profile-card {
+  position: absolute;
+  z-index: 2;
+  top: 175px;
+  left: 75px;
+  width: 375px;
+  height: 525px;
+  background-color: rgb(244, 236, 230);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+
+.image-container {
+  margin: 30px 0 15px 0;
+}
+
+.image-container > img {
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+}
+
+.profile-card > h1 {
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.underline {
+  width: 50px;
+  height: 2px;
+  background-color: blue;
+}
+.profile-card > p {
+  margin: 20px 0 30px 0;
+}
+.profile-card > p > span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 53px;
+  width: 100%;
+}
+
+.social-media > a > img {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+}
+
+.content {
+  width: 444px;
+  position: absolute;
+  top: 158px;
+  left: 495px;
+}
+
+.content > p:first-child {
+  font-size: 6rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin: 20px 0 0 0;
+}
+
+.content > p:nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.buttons {
+  margin: 50px 0 50px 0;
+}
+.buttons > a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 10px 30px;
+  background-color: white;
+  border-radius: 28px;
+  margin: 0 20px;
+  text-align: center;
+  width: 167px;
+}
+
+.buttons > a:first-child,
+.buttons > a:nth-child(2):hover {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+}
+.buttons > a:nth-child(2) {
+  border: 2px solid black;
+}
+
+.content > p:nth-child(4),
+.content > p:nth-child(5) {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 1200px) {
+  .profile-card {
+    left: 175px;
+  }
+  .content {
+    left: 605px;
+  }
+}
+@media (min-width: 1600px) {
+  .profile-card {
+    left: 305px;
+  }
+  .content {
+    left: 780px;
+  }
+}
+
+@media (max-width: 980px) {
+  main {
+    height: 1325px;
+    background: linear-gradient(to bottom, white 300px, rgb(230, 218, 206) 1%);
+  }
+  .profile-card {
+    position: relative;
+    top: 45px;
+    left: 0;
+    margin: auto;
+  }
+  .content {
+    position: relative;
+    top: 100px;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  main {
+    height: 1410px;
+    background: linear-gradient(to bottom, white 260px, rgb(230, 218, 206) 1%);
+  }
+  .profile-card {
+    width: 310px;
+    height: 430px;
+  }
+  .profile-card > h1 {
+    width: auto;
+  }
+  .content {
+    width: 300px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .buttons > a {
+    margin: 15px 0 15px 0;
+  }
+}

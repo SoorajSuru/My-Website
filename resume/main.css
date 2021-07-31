@@ -1,0 +1,220 @@
+main {
+  background: rgb(244, 236, 230);
+}
+
+.container1 {
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 > .bullet {
+  width: 30px;
+  height: 30px;
+}
+.container1 > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.container2 {
+  margin: 50px auto;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container2 > h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.cv {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 15px 25px;
+  border-radius: 30px;
+  background: blue;
+  color: white;
+}
+.exp-list,
+.edu-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.exp-list > li,
+.edu-list > li {
+  margin: 40px 0 20px 0;
+  max-width: 800px;
+  min-height: 400px;
+  padding: 40px;
+  background: white;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exp1,
+.edu1 {
+  position: relative;
+  width: 35%;
+  top: -60px;
+}
+
+.exp1 > h3:first-child,
+.edu1 > h3:first-child {
+  margin-top: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: blue;
+}
+.exp1 > h3 + h3,
+.edu1 > h3 + h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.exp1 > h3:nth-child(2),
+.edu1 > h3:nth-child(2) {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.exp2,
+.edu2 {
+  position: relative;
+  width: 55%;
+  top: 39px;
+}
+
+.exp2 > p,
+.edu2 > p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.skills {
+  max-width: 800px;
+  min-height: 600px;
+  padding: 0 40px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 100px auto 150px auto;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+
+.skills h2 {
+  margin: 50px 0 30px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.skill-row {
+  width: 100%;
+  display: flex;
+}
+.skill-item {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 75px;
+}
+
+.skill-item .bullet {
+  width: 14px;
+  height: 14px;
+}
+
+.skill-item p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+  .container1 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  .container2 {
+    margin: 50px 20px;
+  }
+  .exp-list > li,
+  .edu-list > li {
+    flex-direction: column;
+    width: 95%;
+  }
+  .exp1,
+  .edu1 {
+    position: static;
+    width: auto;
+    text-align: center;
+  }
+  .exp2,
+  .edu2 {
+    position: static;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .skills {
+    width: 95%;
+  }
+}
+
+@media (max-width: 700px) {
+  .skill-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 550px) {
+  .skill-item {
+    max-width: 350px;
+    width: auto;
+  }
+  .exp-container {
+    flex-direction: column;
+  }
+  .exp-container > a {
+    order: 1;
+  }
+  .exp-container > h2 {
+    order: 2;
+    margin-top: 100px;
+  }
+  .exp2,
+  .edu2 {
+    width: 75%;
+  }
+  .container2 {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .container1 {
+    margin-top: 50px;
+  }
+  .container1 > h1 {
+    font-size: 3.5rem;
+  }
+}

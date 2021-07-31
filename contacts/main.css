@@ -1,0 +1,137 @@
+main {
+  background: rgb(244, 236, 230);
+}
+
+.container1 {
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 > .bullet {
+  width: 30px;
+  height: 30px;
+}
+.container1 > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.form-container {
+  background: white;
+  max-width: 800px;
+  width: 92%;
+  margin: 100px auto;
+  box-shadow: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+
+form {
+  padding: 100px 60px;
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  width: 100%;
+}
+
+.row:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-element {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.row1 > .form-element {
+  width: 300px;
+}
+
+.form-element > label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.form-element > input,
+.form-element > textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 35px 0 3px 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+.req > label::after {
+  content: " *";
+  color: red;
+}
+
+.form-element > input:focus,
+.form-element > textarea:focus {
+  outline: none;
+  border-bottom: 2px solid blue;
+}
+
+.submit-btn {
+  margin-top: 40px;
+}
+.btn {
+  padding: 12px 45px;
+  border: none;
+  background: blue;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+@media (max-width: 1024px) {
+  .container1 {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .row1 {
+    flex-direction: column;
+  }
+  .row1 > .form-element {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 50px 20px;
+  }
+  .submit-btn {
+    margin: 40px auto;
+  }
+}
+@media (max-width: 450px) {
+  .container1 > .bullet {
+    width: 22px;
+    height: 22px;
+  }
+  .container1 {
+    margin-top: 50px;
+  }
+  .container1 > h1 {
+    font-size: 3rem;
+  }
+  .form-container {
+    margin-top: 50px;
+  }
+  .submit-btn {
+    margin-bottom: 0;
+  }
+}
